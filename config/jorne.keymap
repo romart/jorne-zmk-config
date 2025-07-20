@@ -9,18 +9,18 @@
         default_layer {
             bindings = <
                 &none &caps_word      &kp Q    &kp W        &kp E     &kp R        &kp T     &kp Y       &kp U    &kp I     &kp O   &kp P    &mt RALT SQT     &none
-                      &mt GRAVE LSHFT &kp A    &kp S        &kp D     &kp F        &kp G     &kp H       &kp J    &kp K     &kp L   &kp SEMI &mt RSHFT FSLH
-                      &mt TAB LCTRL   &kp Z    &kp X        &kp C     &kp V        &kp B     &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH &mt RCTRL BSPC
+                      &mt LSHFT GRAVE &kp A    &kp S        &kp D     &kp F        &kp G     &kp H       &kp J    &kp K     &kp L   &kp SEMI &mt RSHFT FSLH
+                      &mt LCTRL TAB   &kp Z    &kp X        &kp C     &kp V        &kp B     &kp N       &kp M    &kp COMMA &kp DOT &kp FSLH &mt RCTRL BSPC
                                                             &kp LGUI  &mt LALT ESC &lt 1 RET &lt 2 SPACE &kp BSPC &lt 2 DEL
             >;
         };
 
         layer_lower {
             bindings = <
-                &none &kp F1          &kp F2               &kp F3              &kp F4               &kp F5   &kp F6   &kp F7  &kp F8   &kp F9   &kp F10  &kp F11   &kp F12        &none
-                      &mt LSHFT PRCNT &kp QMARK            &kp HASH            &kp LPAR             &kp LBKT &kp DLLR &kp DQT &kp RBKT &kp RPAR &kp PLUS &kp MINUS &mt RSHFT BSLH
-                      &kp AT          &kp N1               &kp N2              &kp N3               &kp N4   &kp N5   &kp N6  &kp N7   &kp N8   &kp N9   &kp N0    &kp DEL
-                                                                               &lt 3 TAB            &trans   &trans   &trans  &trans   &lt 3 DEL
+                &none &kp F1          &kp F2               &kp F3              &kp F4               &kp F5   &kp F6   &kp F7    &kp F8   &kp F9   &kp F10   &kp F11   &kp F12        &none
+                      &mt LSHFT PRCNT &kp QMARK            &kp HASH            &kp LPAR             &kp LBKT &kp DLLR &kp CARET &kp RBKT &kp RPAR &kp EQUAL &kp MINUS &mt RSHFT BSLH
+                      &kp AT          &kp N1               &kp N2              &kp N3               &kp N4   &kp N5   &kp N6    &kp N7   &kp N8   &kp N9    &kp N0    &kp DEL
+                                                                               &lt 3 TAB            &trans   &trans   &trans    &trans   &lt 3 DEL
             >;
         };
 
