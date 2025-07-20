@@ -20,11 +20,11 @@
                 &none &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &none
                       &mt PRCNT LSHFT
         &sk RSHFT EXCL QMARK
-        &sk RSHFT|LSHFT STAR HASH
+        &sk RSHFT STAR HASH
         &kp LPAR
         &sk RSHFT CARET LBKT
 
-        &sk RSHFT DLLR LBRACE
+        &sk LSHFT DLLR LBRACE
 
         &kp RBRACE
         &kp RBKT &kp RPAR &kp PLUS &kp MINUS &mt RSHFT BSLH
