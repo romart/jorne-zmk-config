@@ -24,7 +24,7 @@
         &kp LPAR
         &sk RSHFT CARET LBKT
 
-        &sk RSHFT DLLR LCBR
+        &sk RSHFT DLLR LBKT
 
         &kp RCBR
         &kp RBKT &kp RPAR &kp PLUS &kp MINUS &mt RSHFT BSLH
