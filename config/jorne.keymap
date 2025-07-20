@@ -24,9 +24,9 @@
         &kp LPAR
         &sk RSHFT CARET LBKT
 
-        &sk RSHFT DLLR LBRACE
+        &sk RSHFT DLLR LBKT
 
-        &kp RBRACE
+        &kp RBKT
         &kp RBKT &kp RPAR &kp PLUS &kp MINUS &mt RSHFT BSLH
         &kp AT &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp DEL
                                   &lt 3 TAB &trans &trans &trans &trans &lt 3 DEL
