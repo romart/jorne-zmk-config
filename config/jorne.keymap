@@ -1,46 +1,45 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Alphas {
             bindings = <
-                &none &kp LGUI        &kp Q    &kp W &kp E      &kp R        &kp T     &kp Y       &kp U         &kp I     &kp O   &kp P    &mt RALT SQT     &none
-                      &mt LSHFT GRAVE &kp A    &kp S &kp D      &kp F        &kp G     &kp H       &kp J         &kp K     &kp L   &kp SEMI &kp BSLH
-                      &kp LCTRL       &kp Z    &kp X &kp C      &kp V        &kp B     &kp N       &kp M         &kp COMMA &kp DOT &kp FSLH &kp RCTRL
-                                                     &lt 2 TAB  &mt LALT ESC &lt 1 RET &lt 1 SPACE &mt RSHFT ESC &lt 2 BSPC
+&none  &kp ESC        &kp Q  &kp W  &kp E         &kp R   &kp T        &kp Y        &kp U   &kp I          &kp O    &kp P     &kp SQT    &none
+       &mt LSHFT TAB  &kp A  &kp S  &kp D         &kp F   &kp G        &kp H        &kp J   &kp K          &kp L    &kp SEMI  &kp BSLH
+       &kp LCTRL      &kp Z  &kp X  &kp C         &kp V   &kp B        &kp N        &kp M   &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
+                                    &kp LEFT_GUI  &tog 2  &lt 1 SPACE  &lt 1 ENTER  &tog 2  &mt RALT BSPC
             >;
         };
 
-        layer_lower {
+        Symbols {
             bindings = <
-                &none &kp F1          &kp F2     &kp F3    &kp F4     &kp F5   &kp F6    &kp F7      &kp F8   &kp F9   &kp F10   &kp F11   &kp F12        &none
-                      &mt LSHFT PRCNT &kp QMARK  &kp HASH  &kp LPAR   &kp LBKT &kp CARET &kp DLLR    &kp RBKT &kp RPAR &kp MINUS &kp EQUAL &kp FSLH
-                      &kp AT          &kp N1     &kp N2    &kp N3     &kp N4   &kp N5    &kp N6      &kp N7   &kp N8   &kp N9    &kp N0    &trans
-                                                           &lt 3 TAB  &trans   &trans    &trans      &trans   &lt 3 DEL
+&none  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5    &kp F6     &kp F7    &kp F8    &kp F9    &kp F10    &kp F11    &kp F12   &none
+       &kp LSHFT  &kp QMARK  &kp HASH  &kp LPAR  &kp LBKT  &kp CARET  &kp DLLR  &kp RBKT  &kp RPAR  &kp MINUS  &kp EQUAL  &kp FSLH
+       &trans     &kp N1     &kp N2    &kp N3    &kp N4    &kp N5     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0     &trans
+                                       &kp TAB   &tog 3    &trans     &trans    &tog 3    &kp DEL
             >;
         };
 
-        layer_raise {
+        Navigation {
             bindings = <
-                &none &kp KP_NUM      &kp KP_SLASH    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp C_VOL_UP &kp HOME  &kp PSCRN  &kp PG_UP &kp SLCK        &kp CAPS       &none
-                      &mt LCTRL EQUAL &kp KP_MULTIPLY &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &kp C_MUTE   &kp LEFT  &kp UP     &kp RIGHT &kp INS         &mt RCTRL K_APP
-                      &trans          &kp KP_N0       &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp KP_DOT   &kp C_VOL_DN &kp END   &kp DOWN   &kp PG_DN &kp PAUSE_BREAK &trans
-                                                                &trans    &trans    &lt 3 RET    &lt 3 SPACE  &trans    &kp DEL
+&none  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp UP     &kp PG_UP  &kp SLCK         &kp CAPS         &none
+       &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp PSCRN  &kp RIGHT  &kp INS          &mt RCTRL K_APP
+       &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
+                                                    &trans     &trans     &lt 3 RET     &lt 3 SPACE   &trans    &kp DEL
             >;
         };
 
-        layer_adjust {
+        Bluetooth {
             bindings = <
-                &none &bootloader &none        &none        &none        &none        &kp X        &none        &none        &none        &none        &none        &bootloader &none
-                      &bt BT_CLR  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 4 &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR
-                      &none       &none        &none        &none        &none        &none        &none        &none        &none        &none        &none        &none
-                                                            &trans       &none        &trans       &trans       &none        &kp DEL
+&none  &bootloader  &none         &none         &none         &none         &kp X         &none         &none         &none         &none         &none         &bootloader  &none
+       &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+       &none        &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none
+                                                &trans        &none         &trans        &trans        &none         &kp DEL
             >;
         };
-
     };
 };
