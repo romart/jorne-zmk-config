@@ -8,19 +8,19 @@
 
         Alphas {
             bindings = <
-&none  &kp ESC        &kp Q  &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U        &kp I          &kp O    &kp P     &kp SQT    &none
-       &mt LSHFT TAB  &kp A  &kp S  &kp D         &kp F        &kp G        &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp BSLH
-       &kp LCTRL      &kp Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
-                                    &kp LEFT_GUI  &lt 2 SPACE  &lt 1 SPACE  &lt 1 ENTER  &lt 2 ENTER  &mt RALT BSPC
+&none  &kp ESC        &kp Q  &kp W  &kp E         &kp R         &kp T        &kp Y        &kp U        &kp I          &kp O    &kp P     &kp SQT    &none
+       &mt LSHFT TAB  &kp A  &kp S  &kp D         &kp F         &kp G        &kp H        &kp J        &kp K          &kp L    &kp SEMI  &kp BSLH
+       &kp LCTRL      &kp Z  &kp X  &kp C         &kp V         &kp B        &kp N        &kp M        &kp COMMA      &kp DOT  &kp FSLH  &kp RCTRL
+                                    &kp LEFT_GUI  &lt 2 RETURN  &lt 1 SPACE  &lt 1 ENTER  &lt 2 SPACE  &mt RALT BSPC
             >;
         };
 
         Symbols {
             bindings = <
-&none  &kp F1     &kp F2    &kp F3    &kp F4    &kp F5     &kp F6     &kp F7    &kp F8     &kp F9    &kp F10    &kp F11    &kp F12   &none
-       &kp LSHFT  &kp STAR  &kp HASH  &kp LPAR  &kp LBKT   &kp CARET  &kp DLLR  &kp RBKT   &kp RPAR  &kp MINUS  &kp EQUAL  &kp FSLH
-       &kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4     &kp N5     &kp N6    &kp N7     &kp N8    &kp N9     &kp N0     &trans
-                                      &kp TAB   &lt 3 ESC  &trans     &trans    &lt 3 ESC  &kp DEL
+&none  &kp F1     &kp F2    &kp F3    &kp F4    &kp F5       &kp F6     &kp F7    &kp F8       &kp F9    &kp F10    &kp F11    &kp F12   &none
+       &kp LSHFT  &kp STAR  &kp HASH  &kp LPAR  &kp LBKT     &kp CARET  &kp DLLR  &kp RBKT     &kp RPAR  &kp MINUS  &kp EQUAL  &kp FSLH
+       &kp GRAVE  &kp N1    &kp N2    &kp N3    &kp N4       &kp N5     &kp N6    &kp N7       &kp N8    &kp N9     &kp N0     &trans
+                                      &kp TAB   &lt 3 SPACE  &trans     &trans    &lt 3 ENTER  &kp DEL
             >;
         };
 
@@ -29,7 +29,7 @@
 &none  &kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp UP     &kp PG_UP  &kp SLCK         &kp CAPS         &none
        &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp PSCRN  &kp RIGHT  &kp INS          &mt RCTRL K_APP
        &trans           &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &trans
-                                                    &trans     &trans     &lt 3 RET     &lt 3 SPACE   &trans    &kp DEL
+                                                    &trans     &trans     &lt 3 SPACE   &lt 3 ENTER   &trans    &kp DEL
             >;
         };
 
